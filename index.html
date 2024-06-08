@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="loader">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <div class="body">
+    <div id="text" data-text="css 3D Isometric Text">
+        css 3D Isometric Text
+    </div>
+</div>
+<div class="outer-container">
+<div class="container">
+    <span style="--i:1;"></span>
+    <span style="--i:2;"></span>
+    <span style="--i:3;"></span>
+    <span style="--i:4;"></span>
+    <span style="--i:5;"></span>
+    <span style="--i:6;"></span>
+</div>
+</div>
+<script>
+    var text=document.getElementById('text');
+    var shadow='';
+    for (var i = 0; i < 20; i++) {
+        shadow+=(shadow?',':'')+i*1+'px '+i*1+'px 0 rgb(243, 243, 122)'        
+    }
+    text.style.textShadow=shadow
+</script>
+</body>
+</html>
